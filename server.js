@@ -42,6 +42,19 @@ db.on('error', function(err) {
 
 //Delete One from the DB
 
+app.get("/delete/:id", function(req, res){
+
+  var id = req.params.id;
+  db.notes.remove({_id:id}, function(err, doc){
+    if(!err){
+      res.send("success");
+    }
+    else{
+      res.send("fail");
+    }
+  });
+});
+
 
 
 //Clear the DB
