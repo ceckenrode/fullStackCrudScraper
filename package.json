@@ -1,0 +1,19 @@
+{
+  "name": "fullstackscraper",
+  "version": "1.0.0",
+  "description": "a full stack application that preforms crud actions on a database and renders these changes with jquery",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceckenrode/fullStackCrudScraper.git"
+  },
+  "author": "Christian, Wofgang, Chris, Jean Carlos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ceckenrode/fullStackCrudScraper/issues"
+  },
+  "homepage": "https://github.com/ceckenrode/fullStackCrudScraper#readme"
+}
