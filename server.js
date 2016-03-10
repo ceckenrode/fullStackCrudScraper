@@ -55,6 +55,23 @@ app.get("/delete/:id", function(req, res){
   });
 });
 
+app.post("/update/:id", function(req, res){
+
+  var id = req.params.id;
+  var title = req.body.title;
+  var note = req.body.note;
+
+  db.notes.update({_id:id}, {$set:{title:title,note:note}}, function(err, doc){
+    if(!err){
+      res.send("success");
+    }
+    else{
+      res.send("fail");
+    }
+  });
+
+});
+
 
 
 //Clear the DB
